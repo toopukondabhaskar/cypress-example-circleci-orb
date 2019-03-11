@@ -34,15 +34,15 @@ workflows:
 #           spec: "cypress/integration/*-b.js"
 
 # custom cypress run command
-workflows:
-  build:
-    jobs:
+#workflows:
+  #build:
+    #jobs:
       # checks out code and installs dependencies once
-      - cypress/run:
-          command: 'npm run report'
-          post-steps:
-            - store_test_results:
-                path: cypress/results
+      #- cypress/run:
+          #command: 'npm run report'
+          #post-steps:
+            #- store_test_results:
+                #path: cypress/results
 # realistic case: install in 1 job,
 # run tests in parallel on several machines after that
 # workflows:
